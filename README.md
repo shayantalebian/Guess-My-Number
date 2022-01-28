@@ -2,7 +2,7 @@
 
 # Guess My Number
 
-### [Live Site]()
+### [Live Site](https://guessmynumber-shayan.netlify.app/)
 
 ## Introduction
 
