@@ -41,6 +41,6 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 
 // Create guide alert
-// function message() {
-//   alert("To have better exprince visit this website with your laptop ");
-// }
+function message() {
+  alert("To have better exprince visit this website with your laptop ");
+}
