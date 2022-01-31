@@ -23,3 +23,8 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "📉 Too Low!";
   }
 });
+
+// Create guide alert
+function message() {
+  alert("To have better exprince visit this website with your laptop ");
+}
