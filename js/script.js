@@ -41,6 +41,9 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 
 // Create guide alert
-function message() {
-  alert("To have better exprince visit this website with your laptop ");
+if (screen.width < 601) {
+  alert("To have better exprince visit this website with computer");
+}
+if (screen.height < 701) {
+  alert("To have better exprince visit this website with computer");
 }
