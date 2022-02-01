@@ -47,3 +47,11 @@ if (screen.width < 601) {
 if (screen.height < 701) {
   alert("To have better exprince visit this website with computer");
 }
+
+// Create a fucntion in order to "enter" key
+document.querySelector(".guess").addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.querySelector(".check").click();
+  }
+});
