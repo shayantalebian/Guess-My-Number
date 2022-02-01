@@ -11,15 +11,24 @@ document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
 
+  // When there is no input
   if (!guess) {
     document.querySelector(".message").textContent = "⛔ Not valid!";
-  } else if (guess > 20) {
+  }
+  // When guess is more than 20 (out of range)
+  else if (guess > 20) {
     document.querySelector(".message").textContent = "⛔ Not valid!";
-  } else if (guess < 1) {
+  }
+  // When guess is less than 1 (out of range)
+  else if (guess < 1) {
     document.querySelector(".message").textContent = "⛔ Not valid!";
-  } else if (guess === secretNumber) {
+  }
+  // When player wins
+  else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "🎉 Correct Number!";
-  } else if (guess > secretNumber) {
+  }
+  // When guess is too high
+  else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "📈 Too high!";
       score--;
@@ -28,7 +37,9 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent = "💥 You lost the game";
       document.querySelector(".score").textContent = 0;
     }
-  } else if (guess <= secretNumber) {
+  }
+  // When guess is too low
+  else if (guess <= secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "📈 Too Low!";
       score--;
