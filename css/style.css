@@ -249,4 +249,7 @@ h1 {
   .footer-text {
     font-size: 0.7rem;
   }
+  main {
+    height: 45vh;
+  }
 }
