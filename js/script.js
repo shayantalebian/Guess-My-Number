@@ -43,11 +43,17 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent = "📈 Too high!";
       score--;
       document.querySelector(".score").textContent = score;
+      document
+        .querySelector(".score")
+        .animate([{ color: "red" }, { color: "#eee" }], {
+          duration: 800,
+        });
+      document.querySelector("body").style.backgroundColor = "#fa5252";
     } else {
       document.querySelector(".message").textContent = "💥 You lost the game";
       document.querySelector(".score").textContent = 0;
+      document.querySelector("body").style.backgroundColor = "#c92a2a";
     }
-    document.querySelector("body").style.backgroundColor = "#fa5252";
   }
   // When guess is too low
   else if (guess <= secretNumber) {
@@ -55,11 +61,17 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent = "📉 Too Low!";
       score--;
       document.querySelector(".score").textContent = score;
+      document
+        .querySelector(".score")
+        .animate([{ color: "red" }, { color: "#eee" }], {
+          duration: 800,
+        });
+      document.querySelector("body").style.backgroundColor = "#339af0";
     } else {
       document.querySelector(".message").textContent = "💥 You lost the game";
       document.querySelector(".score").textContent = 0;
+      document.querySelector("body").style.backgroundColor = "#c92a2a";
     }
-    document.querySelector("body").style.backgroundColor = "#339af0";
   }
 });
 
