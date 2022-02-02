@@ -77,10 +77,10 @@ document.querySelector(".check").addEventListener("click", function () {
 
 // Create guide alert
 if (screen.width < 601) {
-  alert("To have better exprince visit this website with computer");
+  alert("To have better experience visit this website with computer");
 }
 if (screen.height < 701) {
-  alert("To have better exprince visit this website with computer");
+  alert("To have better experience visit this website with computer");
 }
 
 // Create a fucntion in order to "enter" key
