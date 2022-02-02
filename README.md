@@ -1,5 +1,3 @@
-# Status : Not finished yet
-
 # Guess My Number
 
 ### [Live Site](https://guessmynumber-shayan.netlify.app/)
